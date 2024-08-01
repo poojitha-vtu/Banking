@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url('https://wallpapercave.com/wp/wp6680305.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    position: fixed; /* Fix the container's position */
+    top: 0;
+    left: 0;
+    width: 25vw; /* Cover 25% of the viewport width */
+    height: 100vh; /* Cover the entire viewport height */
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    border-radius: 0 10px 10px 0; /* Rounded corners on the right side */
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.1); /* Shadow to the right */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+#loginTitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #1c7edb;
+}
+
+.input-container {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-container label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input-container input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#loginButton {
+    width: 100%;
+    background: linear-gradient(to right, #000080, #1c7edb);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#loginButton:hover {
+    background: linear-gradient(to right, #0056b3, #1c7edb);
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border: 1px solid #888;
+    z-index: 1000;
+    text-align: center;
+}
+
+.popup h2 {
+    color: #1c7edb;
+    margin-bottom: 20px;
+}
+
+.popup-btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #000080;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup-btn:hover {
+    background-color: #000080;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.telugu {
+    font-family: "Gidugu", sans-serif;
+}
